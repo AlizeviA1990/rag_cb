@@ -39,7 +39,7 @@ function handleEvent(event) {
 function greetingMessageEvent(event) {
   var msg = {
     "type": "flex",
-    "altText": "ข้อความที่แสดง",
+    "altText": "ยินดีต้อนรับสู่ ragbet.net",
     "contents":{
       "type": "bubble",
       "hero": {
