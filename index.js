@@ -6,6 +6,8 @@ const SignatureValidationFailed = require('@line/bot-sdk').SignatureValidationFa
 
 const app = express()
 
+const PORT = process.env.PORT || 2563
+
 app.get('/webhook_rag_cb', (req, res) => {
   //res.json({})
   res.send('rag_cb ok')
@@ -110,8 +112,7 @@ function greetingMessageEvent(event) {
             "action": {
               "type": "uri",
               "label": "สมัครสมาชิก",
-              // "uri": "https://liff.line.me/1655239313-2lZx8oOL"
-              "uri": "https://ragbet.net/register"
+              "uri": "https://liff.line.me/1655239313-2lZx8oOL"
             },
             "color": "#43C62FFF",
             "style": "primary",
@@ -135,5 +136,7 @@ function greetingMessageEvent(event) {
   return client.replyMessage(event.replyToken, msg);
 }
 
-app.listen(2563)
+app.listen(PORT,()=>{
+  console.log('App is started on Port 2563')
+})
 
