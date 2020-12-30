@@ -112,7 +112,7 @@ function greetingMessageEvent(event) {
             "action": {
               "type": "uri",
               "label": "สมัครสมาชิก",
-              "uri": "https://liff.line.me/1655239313-2lZx8oOL"
+              "uri": "https://liff.line.me/1655239313-Dg41xbXz"
             },
             "color": "#43C62FFF",
             "style": "primary",
